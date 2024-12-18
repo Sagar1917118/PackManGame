@@ -200,15 +200,15 @@ const App = () => {
                   : "bg-black"
               } flex items-center justify-center relative`}
             >
-              {cell === 2 && <div className="absolute w-2 h-2 bg-red-300 rounded-full"></div>}
+              {cell === 2 && <div className="absolute w-1 h-1 bg-red-300 rounded-full"></div>}
               {pacMan.x === colIndex && pacMan.y === rowIndex && (
-                 <div className="z-50 w-3/4 h-3/4  rounded-full"><img  className="w-full" src={packmanImg}></img></div>
+                 <div className="z-20 w-3/4 h-3/4  rounded-full"><img  className="w-full" src={packmanImg}></img></div>
               )}
               {redGhost.x === colIndex && redGhost.y === rowIndex && (
-                 <div className="z-50 w-3/4 h-3/4  rounded-full"><img  className="w-full" src={rGhostImg}></img></div>
+                 <div className="z-20 w-3/4 h-3/4  rounded-full"><img  className="w-full" src={rGhostImg}></img></div>
               )}
               {purpleGhost.x === colIndex && purpleGhost.y === rowIndex && (
-                <div className="z-50 w-3/4 h-3/4  rounded-full"><img  className="w-full" src={pGhostImg}></img></div>
+                <div className="z-20 w-3/4 h-3/4  rounded-full"><img  className="w-full" src={pGhostImg}></img></div>
               )}
             </div>
           ))
